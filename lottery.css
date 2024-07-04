@@ -7,9 +7,10 @@
 body {
     background-color: #212121;
     color: #fff;
-    min-height: 100%;
+    min-height: 100vh;
     background: linear-gradient(90deg, rgba(59, 183, 178, 1) 9%, rgba(71, 59, 183, 1) 47%, rgba(186, 78, 154, 1) 100%);
     min-width: 100%;
+    background-repeat: no-repeat;
 }
 header{
     display: flex;
@@ -142,6 +143,7 @@ main{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        margin-left: 4vw;
     }
     header{
         display: flex;
@@ -155,4 +157,17 @@ main{
         justify-self: center;
         margin-left: 4vw;
     }
+    .input{
+        margin-left: auto;
+    }
+}
+@media only screen and (max-width: 470px) {
+    .input{
+        max-width: 430px;
+        overflow: hidden;
+    }
+    .input span{
+        max-width: 1vw;
+    }
+    
 }
