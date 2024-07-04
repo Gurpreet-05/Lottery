@@ -8,8 +8,8 @@ body {
     background-color: #212121;
     color: #fff;
     min-height: 100%;
-    background: rgb(59, 183, 178);
     background: linear-gradient(90deg, rgba(59, 183, 178, 1) 9%, rgba(71, 59, 183, 1) 47%, rgba(186, 78, 154, 1) 100%);
+    min-width: 100%;
 }
 header{
     display: flex;
@@ -39,8 +39,7 @@ header nav a:hover{
     font-size: 25px;
     color: black;
     position: relative;
-    right: 80px;
-    bottom: 20px;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +67,7 @@ main{
     display: flex;
     flex-flow: column;
     color: green;
-    margin: 120px 130px;
+    margin: auto;
     gap: 20px;
     position: relative;
     left: 100px;
@@ -136,4 +135,24 @@ main{
     user-select: none;
     font-size: 1.25rem;
     opacity: 0;
+}
+@media only screen and (max-width: 800px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .conditions{
+        display: flex;
+        align-self: center;
+        justify-self: center;
+        margin-left: 4vw;
+    }
 }
