@@ -115,8 +115,7 @@ main {
     border-radius: 10px;
     height: 12em;
 }
-
-@media only screen and (min-width:480px) and (max-width:800px) {
+@media only screen and (min-width:300px) and (max-width:800px) {
     * {
         font-size: 8px;
         line-height: 14px;
@@ -124,8 +123,12 @@ main {
 
     .modes {
         width: 35em;
-        height: 30em;
-
+        /* height: 30em; */
+        gap: 3em;
+    }
+    .modes nav{
+        gap: 6em;
+        margin-bottom: 5em;
     }
     .jackpot{
         display: none;
@@ -133,10 +136,14 @@ main {
     main{
         display: flex;
         flex-direction: column;
-        gap: 7em;
+        gap: 10em;
     }
     .Something{
         display: flex;
+    }
+    header{
+        gap: 2em;
+        padding: 2em;
     }
 }
 
