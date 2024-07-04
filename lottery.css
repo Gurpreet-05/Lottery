@@ -1,9 +1,12 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
 }
+
 body {
     background-color: #212121;
     color: #fff;
@@ -12,90 +15,110 @@ body {
     min-width: 100%;
     background-repeat: no-repeat;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    gap: 10px;
-    padding: 20px;
+    gap: 1em;
+    padding: 1em;
+    width: 100vw;
+    margin-bottom: 4em;
 }
-header h1{
+
+header h1 {
     font-family: Slackey, "Lucida Grande", "Lucida Sans Unicode", Tahoma, Geneva, Arial, Verdana, sans-serif;
-    font-size: 28px;
+    font-size: 2em;
     font-weight: 400;
     color: black;
 }
-header nav a{
+
+header nav a {
     color: #ca0000;
-    margin: 5px;
+    margin: 0.5em;
     text-decoration: none;
     font-weight: 700;
 }
-header nav a:hover{
+
+header nav a:hover {
     color: black;
 }
-.coins{
+
+.coins {
     align-self: flex-end;
-    font-size: 25px;
+    font-size: 2em;
     color: black;
-    position: relative;
-    margin: auto;
+    position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    margin-right: 1em;
+
 }
-.amount{
+
+.amount {
     display: flex;
     border: 2px solid white;
     background-color: aquamarine;
-    border-radius: 10px;
-    width: 100px;
-    height: 40px;
-    justify-content: center;   
+    border-radius: 0.8em;
+    width: 7em;
+    height: 2.3em;
+    justify-content: center;
     align-items: center;
 }
-.coins img{
-    height: 60px;
+
+.coins img {
+    height: 4.5em;
     position: relative;
-    left: 30px;
+    left: 2em;
 }
-main{
+
+main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: auto auto auto;
 }
-.conditions{
+
+.conditions {
+    justify-self: center;
     display: flex;
     flex-flow: column;
     color: green;
-    margin: auto;
-    gap: 20px;
-    position: relative;
-    left: 100px;
+    gap: 1.5em;
+    justify-content: center;
+    align-items: center;
 }
-.condn1{
+
+.condn1 {
     display: flex;
 }
-.condn2{
+
+.condn2 {
     display: flex;
 }
-.main{
-    justify-self: left;
+
+.khali{
+    opacity: 0;
+}
+.main {
+    justify-self: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 4.6em;
 }
-.headline{
+
+.headline {
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
     font-size: 2rem;
     color: cyan;
 }
-.input{
+
+.input {
     background-color: rgba(246, 255, 0, 1);
-    min-height: 30vh;
+    min-height: 12em;
     border: 1px #fff solid;
     border-radius: 100%;
     min-width: 50%;
@@ -105,13 +128,14 @@ main{
     /* gap: 60px; */
     /* box-shadow: 3px 8px #ffffff8e ; */
 }
-.input .lotteryno{
-    margin: 20px;
+
+.input .lotteryno {
+    margin: 1.4em;
     display: inline-block;
     border: 1px #fff solid;
     border-radius: 50%;
-    min-width: 50px;
-    min-height: 40px;
+    min-width: 3em;
+    min-height: 2.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,13 +146,14 @@ main{
     text-shadow: #9f9f9f;
     box-shadow: #9f9f9f 2px 2px;
 }
-#button{
+
+#button {
     z-index: 6;
     display: inline-block;
     border: 1px #fff solid;
     border-radius: 50%;
-    min-width: 100px;
-    min-height: 30px;
+    min-width: 6em;
+    min-height: 2.4em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,37 +162,33 @@ main{
     font-size: 1.25rem;
     opacity: 0;
 }
+
 @media only screen and (max-width: 800px) {
-    main{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin-left: 4vw;
-    }
-    header{
+    main {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
     }
-    .conditions{
-        display: flex;
-        align-self: center;
-        justify-self: center;
-        margin-left: 4vw;
-    }
-    .input{
-        margin-left: auto;
+
+    * {
+        font-size: 12px;
+        line-height: 20px;
     }
 }
+
 @media only screen and (max-width: 470px) {
-    .input{
+    .input {
         max-width: 430px;
         overflow: hidden;
     }
-    .input span{
+
+    .input span {
         max-width: 1vw;
     }
-    
+
+    * {
+        font-size: 8px;
+        line-height: 14px;
+    }
 }
