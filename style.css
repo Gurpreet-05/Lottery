@@ -133,6 +133,12 @@ main {
     .jackpot{
         display: none;
     }
+    .jackpot2{
+        height: 6em;
+    }
+    .Something img{
+        height: 9em;
+    }
     main{
         display: flex;
         flex-direction: column;
