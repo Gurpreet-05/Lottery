@@ -225,6 +225,9 @@ header nav a:hover {
 .add img{
     height: 2em;
 }
+.add1{
+    font-size: 1em;
+}
 
 .button3 {
     border: 2px solid black;
