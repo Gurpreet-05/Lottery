@@ -15,6 +15,8 @@ let add = document.querySelector(".add");
 let add1 = document.querySelector(".add1");
 let check = document.querySelectorAll(".button");
 let a, b, dice1, dice2;
+add.style.opacity = '0';
+Win.style.opacity = '0';
 newgame();
 retry.addEventListener("click", () => {
     console.log(y);
