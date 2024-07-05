@@ -97,6 +97,12 @@ main {
     display: flex;
 }
 
+.condn1 img {
+    height: 2em;
+}
+.condn2 img{
+    height: 2em;
+}
 .khali{
     opacity: 0;
 }
